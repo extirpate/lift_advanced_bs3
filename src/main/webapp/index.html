@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type"/>
+    <title>Home</title>
+</head>
+<body data-lift-content-id="main">
+<div id="main" data-lift="surround?with=default;at=content">
+
+    <h2>Welcome to your project!</h2>
+
+    <p>
+	<div data-lift="helloWorld.howdy">
+	  Welcome to your Lift app at <span id="time">Time goes here</span>
+      <div class="button_1"></div>
+	</div>
+    </p>
+
+    <div data-lift="Comet?type=Clock">
+        Current Time: <span id="time2">Missing Clock</span>
+    </div>
+
+<!--    <div ng-app="">
+                <p>Name: <input type="text" ng-model="name"></p>
+
+                <p ng-bind="name"></p>
+            </div>-->
+<!--    <div ng-controller="AlertDemoCtrl">
+        <alert ng-repeat="alert in alerts" type="{{alert.type}}" close="closeAlert($index)">{{alert.msg}}</alert>
+        <button class='btn btn-default' ng-click="addAlert()">Add Alert</button>
+    </div>-->
+<!--    <script>
+angular.module('ui.bootstrap.demo', ['ui.bootstrap']);
+angular.module('ui.bootstrap.demo').controller('AlertDemoCtrl', function ($scope) {
+  $scope.alerts = [
+    { type: 'danger', msg: 'Oh snap! Change a few things up and try submitting again.' },
+    { type: 'success', msg: 'Well done! You successfully read this important alert message.' }
+  ];
+
+  $scope.addAlert = function() {
+    $scope.alerts.push({msg: 'Another alert!'});
+  };
+
+  $scope.closeAlert = function(index) {
+    $scope.alerts.splice(index, 1);
+  };
+});
+   </script>-->
+<!--    <style>
+        .full button span {
+        background-color: limegreen;
+        border-radius: 32px;
+        color: black;
+        }
+        .partially button span {
+        background-color: orange;
+        border-radius: 32px;
+        color: black;
+        }
+    </style>
+    <div ng-controller="DatepickerDemoCtrl">
+        <pre>Selected date is: <em>{{dt | date:'fullDate' }}</em></pre>
+
+        <h4>Inline</h4>
+        <div style="display:inline-block; min-height:290px;">
+            <datepicker ng-model="dt" min-date="minDate" show-weeks="true" class="well well-sm" custom-class="getDayClass(date, mode)"></datepicker>
+        </div>
+
+        <h4>Popup</h4>
+        <div class="row">
+            <div class="col-md-6">
+                <p class="input-group">
+                    <input type="text" class="form-control" datepicker-popup="{{format}}" ng-model="dt" is-open="opened" min-date="minDate" max-date="'2015-06-22'" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" />
+              <span class="input-group-btn">
+                <button type="button" class="btn btn-default" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+              </span>
+                </p>
+            </div>
+
+            <div class="col-md-6">
+                <p class="input-group">
+                    <input type="date" class="form-control" datepicker-popup ng-model="dt" is-open="opened" min-date="minDate" max-date="'2015-06-22'" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" />
+              <span class="input-group-btn">
+                <button type="button" class="btn btn-default" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+              </span>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <label>Format:</label> <select class="form-control" ng-model="format" ng-options="f for f in formats"><option></option></select>
+            </div>
+        </div>
+
+        <hr />
+        <button type="button" class="btn btn-sm btn-info" ng-click="today()">Today</button>
+        <button type="button" class="btn btn-sm btn-default" ng-click="dt = '2009-08-24'">2009-08-24</button>
+        <button type="button" class="btn btn-sm btn-danger" ng-click="clear()">Clear</button>
+        <button type="button" class="btn btn-sm btn-default" ng-click="toggleMin()" tooltip="After today restriction">Min date</button>
+    </div>-->
+</div>
+</body>
+</html>
+
